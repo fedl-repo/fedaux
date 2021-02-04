@@ -44,7 +44,7 @@
 
 - `"aggregation_mode"` : Choose from "FedAVG" (Federated Averaging), "FedDF" (Federated Ensemble Distillation), "FedAUX" (Federated Learning with Auxiliary Data), "+P" uses pretrained models, "+L" uses linear evaluation
 - `"save_scores"` : Log the certainty scores computed by FedAUX
-- `"pretrained"` : Load a pretrained model from the /checkpoints directory according to the auxiliary data that is used, by default will load "<"model_name">_<"distill_dataset">.pth"
+- `"pretrained"` : Load a pretrained model from the /checkpoints directory according to the auxiliary data that is used, by default will load "<"model_name">_<"distill_dataset">.pth" (the provided checkpoints were obtained by self-supervised pre-training, code available at: https://github.com/leftthomas/SimCLR)
 
 - `"eps_delt"` : (epsilon,delta)-Privacy Parameter of FedAUX
 - `"lambda_reg_score"` : Regularization Term of the ERM
